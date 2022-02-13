@@ -1,0 +1,307 @@
+/* NavBar CSS */
+
+#navbar{
+    display: flex;
+    background: rgb(246, 246, 246);
+    color: rgb(0, 0, 0);
+    height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+a{
+    color: rgb(77, 77, 77);
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+#n_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 1.5em;
+    color: red;
+}
+
+#sec{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+.sec{
+    flex-grow: 1;
+    font-size: 0.8em;
+}
+#home{
+    color: red;
+}
+#sp{
+    color: blue;
+}
+
+#n_btn{
+    padding: 8px;
+    width: 100px;
+    border: red solid 0.5px;
+    border-radius: 20px;
+    color: white;
+    background: rgb(241, 11, 11);
+    font-size: 0.8em;
+    
+}
+#n_btn:hover{
+    padding: 10px;
+    background: white;
+    color: rgb(241, 11, 11);
+
+}
+#n_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#n_deadspace{
+    width: 5vw;
+}
+
+/* Dashboard CSS */
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#text{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding: 40px;  
+    
+}
+#para, .text_head,.analysis{
+    width: 500px;
+    padding: 15px;
+}
+#button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+.text_head{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#images{
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 40px;
+    
+}
+
+#blue{
+    color: rgba(28, 154, 204, 0.568);
+}
+#red{
+    color: red;
+}
+#percentage{
+    background: grey;
+    width: 500px;
+    border-radius: 15px;
+    padding: 0px;
+}
+#slider1{
+    background: red;
+    width: 84%;
+    height: 5px;
+    border-radius: 10px;
+}
+#slider2{
+    background: red;
+    width: 88%;
+    height: 5px;
+    border-radius: 10px;
+}
+#slider3{
+    background: red;
+    width: 94%;
+    height: 5px;
+    border-radius: 10px;
+}
+.analysis{
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 12px;
+}
+
+/* Query CSS */
+.q_parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url(./contact-bg.png);
+    background-repeat: no-repeat;
+    padding: 8%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#q_form{
+    padding: 50px;
+    background: white; 
+    border-radius: 10px; 
+}
+.q_form[placeholder]{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+.q_form{
+    border: white solid 1px;
+    background: rgb(221, 246, 246);
+    border-radius: 15px;
+    margin: 5px;
+}
+#q_name,#q_surname{
+    padding: 10px;
+    width: 180.5px;
+}
+#q_email,#q_tarea{
+    width: 400px;
+    padding: 10px;
+}
+#q_callbtn{
+    height: 20px;
+    border: red solid 0.5px;
+    border-radius: 100px;
+}
+#q_button{
+    font-size: 1em;
+    padding: 12px;
+    width: 160px;
+    border: white solid 1px;
+    background: rgb(58, 188, 240);
+    color: white;
+    border-radius: 20px;
+    margin: 5px;
+}
+#q_button:hover{
+    border: rgb(228, 13, 13) solid 3px;
+    background: rgb(228, 13, 13);
+}
+#dname{
+    color: red;
+}
+.footer{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#q_deadspace{
+    width: 12vw;
+    flex-grow: 1;
+}
+
+
+
+
+/* Mobile Responsiveness */
+@media only screen and (max-width:728px){
+
+    /* navbar css */
+    #navbar{
+        display: flex;
+        height: 40px;
+    }
+    #n_logo{
+        flex-grow: 0.5;
+        font-size: 1em;
+    }
+    .sec{
+        flex-grow: 0.5;
+        font-size: 0.5em;
+    }
+    #n_btn{
+        padding: 4px;
+        width: 60px;
+        font-size: 0.5em;
+    }
+    #n_btn:hover{
+        padding: 8px;
+    }
+    #n_deadspace{
+        width: 1vw;
+    }
+
+   /* Dashboard */
+    
+
+   /* Query Pagw */
+   .q_parent{
+        flex-direction: column;
+    }
+    #q_form{
+        padding: 25px; 
+    }
+    #q_text{
+        padding: 15px;
+        font-size: 0.7em;
+    }
+    .q_form{
+        border-radius: 15px;
+        margin: 3px;
+    }
+    #q_name,#q_surname{
+        padding: 6px;
+        width: 120px;
+    }
+    #q_email,#q_tarea{
+        width: 260px;
+        padding: 6px;
+    }
+    .q_form[placeholder],.footer{
+        font-size: 0.7em;   
+    }
+    #q_button{
+        font-size: 0.9em;
+        padding: 8px;
+        width: 120px;
+        margin: 3px;
+    }
+    #q_button:hover{
+        border: rgb(228, 13, 13) solid 2px;
+    }
+    
+}
+
+/* Tablet Responsiveness */
+@media only screen and (max-width:992px){
+    /* Query Page  */
+    #q_form{
+        padding: 35px; 
+    }
+    #q_text{
+        font-size: 0.8em;
+    }
+    #q_name,#q_surname{
+        width: 155px;
+    }
+    #q_email,#q_tarea{
+        width: 350px;
+    }
+}
