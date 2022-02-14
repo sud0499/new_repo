@@ -69,84 +69,104 @@ a:hover{
 }
 
 /* Dashboard CSS */
-.parent{
+#fparent{
     display: flex;
+    flex-direction: row;
+    /* background-color: silver; */
     justify-content: center;
     align-items: center;
-    background: white;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    /* flex-wrap: wrap; */
 }
-
-#text{
-    color: black;
-    display: flex;
+#fimg{
+    
+    padding:40px;
+    height: 75%;  
+    width:fit-content;
+    align-items: center;
     justify-content: center;
-    align-items:center;
+}
+.fchild{
+    width: 50%;
+     
+}
+.ftext{
+    display: flex;
     flex-direction: column;
-    padding: 40px;  
-    
+    justify-content:center;
+    align-items: baseline;
 }
-#para, .text_head,.analysis{
-    width: 500px;
-    padding: 15px;
+.green{
+    color: seagreen;
 }
-#button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    
-}
-.text_head{
-    font-size: 35px;
-    font-weight: bold;
-}
-
-#images{
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    padding: 40px;
-    
-}
-
-#blue{
-    color: rgba(28, 154, 204, 0.568);
-}
-#red{
+.red{
     color: red;
 }
-#percentage{
-    background: grey;
-    width: 500px;
-    border-radius: 15px;
-    padding: 0px;
-}
-#slider1{
-    background: red;
-    width: 84%;
-    height: 5px;
-    border-radius: 10px;
-}
-#slider2{
-    background: red;
-    width: 88%;
-    height: 5px;
-    border-radius: 10px;
-}
-#slider3{
-    background: red;
-    width: 94%;
-    height: 5px;
-    border-radius: 10px;
-}
-.analysis{
+.ft_head{
+    font-size: 28px;
+    font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 1.2em;
-    padding: 12px;
+}
+#ft_content{
+    padding-top: 20px;
+    font-size: 18px;
+    color: grey;
+    text-align:justify;
+    font-family: Arial, Helvetica, sans-serif;
+    width:85%
+}
+.ftwcontent{
+    width:85%;
+}
+#deadspace{
+    height: 20px;
+}
+.percentages
+{
+    display: flex;
+    flex-direction: row;
+    
+}
+.ftheading{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-grow: 1;
+}
+.pt84{
+    width: 84%;
+}
+.pt16{
+    width: 16%;
+    text-align: left;
+    font-weight: bold;
+}
+.per1{
+    
+    background: linear-gradient(to right, #eb1b1b 84%,#1da39c 16%);
+    height: 4px;
+}
+.pt88{
+    width: 88%;
+}
+.pt12{
+    width: 12%;
+    text-align: left;
+    font-weight: bold;
+}
+.per2{
+    background: linear-gradient(to right, #eb1b1b 88%,#1da39c 12%);
+    height: 4px;
+}
+.pt94{
+    width: 94%;
+}
+.pt6{
+    width: 6%;
+    text-align: left;
+    font-weight: bold;
+}
+.per3{
+    background: linear-gradient(to right, #eb1b1b 94%,#1da39c 6%);
+    height: 4px;
 }
 
 /* Query CSS */
